@@ -1,3 +1,6 @@
+// 비전 중복 삭제
+// 미션 밸류 하단 문장 추가
+
 <!DOCTYPE html>
 <html lang="ko">
   <head>
@@ -55,9 +58,9 @@
         <span class="text-xl font-bold text-blue-700 dark:text-blue-300">백민파트너스</span>
       </div>
       <div class="flex space-x-2">
-        <button class="lang-btn" onclick="changeLang('ko')">한국어</button>
-        <button class="lang-btn" onclick="changeLang('en')">English</button>
-        <button class="lang-btn" onclick="changeLang('zh')">中文</button>
+        <button class="lang-btn" onclick="changeLang('ko')">KO</button>
+        <button class="lang-btn" onclick="changeLang('en')">EN</button>
+        <button class="lang-btn" onclick="changeLang('zh')">ZH</button>
       </div>
     </header>
 
@@ -95,147 +98,132 @@
     </section>
 
     <section class="px-4 sm:px-6 py-16 max-w-7xl mx-auto space-y-16">
-  <div class="grid md:grid-cols-2 gap-8 items-center">
-    <img src="./assets/images/vision.jpg" alt="Vision Image" class="rounded-xl shadow w-full h-auto" />
-    <div>
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-blue-700 dark:text-blue-300">Vision</h2>
-      <div data-lang="ko">
-        <p class="text-base sm:text-lg leading-relaxed">
-          우리는 인류의 진보와 지속가능한 세상을 그립니다.<br />
-          책임 있는 AI 활용을 통해 사회와 환경에 긍정적인 변화를 이끌어내고,<br />
-          궁극적으로 인류의 삶의 질을 높이고자 합니다.
-        </p>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="order-2 md:order-1">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-blue-700 dark:text-blue-300">Mission</h2>
+          <p class="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-4 italic">
+            “Align Profit with Purpose, Growth with Impact”
+          </p>
+          <div data-lang="ko">
+            <p class="text-base sm:text-lg leading-relaxed">
+              우리는 사회적·환경적 과제에 도전하는 기업이 성장할 수 있다고 믿습니다.<br />
+              직면한 ESG 핵심 이슈에 대해 AI 기반의 해법을 모색하고 실현을 지원합니다.<br />
+              수익성과 사회적 가치를 함께 추구하며, 지속가능한 성장의 새로운 기준을 제시합니다.
+            </p>
+          </div>
+          <div data-lang="en">
+            <p class="text-base sm:text-lg leading-relaxed">
+              We believe that companies addressing social and environmental issues can thrive.<br />
+              We explore and support AI-driven solutions to key ESG challenges.<br />
+              By aligning profit with purpose, we set a new standard for sustainable growth.
+            </p>
+          </div>
+          <div data-lang="zh">
+            <p class="text-base sm:text-lg leading-relaxed">
+              我们相信，致力于解决社会与环境问题的企业同样能够成长。<br />
+              我们探索并支持应对关键ESG挑战的AI解决方案，<br />
+              将利润与使命对齐，引领可持续增长的新标准。
+            </p>
+          </div>
+        </div>
+        <img src="./assets/images/mission.jpg" alt="Mission Image" class="rounded-xl shadow order-1 md:order-2 w-full h-auto" />
       </div>
-      <div data-lang="en">
-        <p class="text-base sm:text-lg leading-relaxed">
-          We envision human progress and a sustainable world.<br />
-          Through responsible AI, we aim to bring positive change to society and the environment,<br />
-          ultimately enhancing the quality of human life.
-        </p>
-      </div>
-      <div data-lang="zh">
-        <p class="text-base sm:text-lg leading-relaxed">
-          我们展望人类进步与可持续的世界。<br />
-          通过负责任地使用人工智能，推动社会和环境的积极变化，<br />
-          最终提升人类生活质量。
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="grid md:grid-cols-2 gap-8 items-center">
-    <div class="order-2 md:order-1">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-blue-700 dark:text-blue-300">Mission</h2>
-      <div data-lang="ko">
-        <p class="text-base sm:text-lg leading-relaxed">
-          우리는 사회적·환경적 과제에 도전하는 기업이 성장할 수 있다고 믿습니다.<br />
-          직면한 ESG 핵심 이슈에 대해 AI 기반의 해법을 모색하고 실현을 지원합니다.<br />
-          지속가능한 비즈니스 성장과 시장 가치를 함께 만들어갑니다.
-        </p>
-      </div>
-      <div data-lang="en">
-        <p class="text-base sm:text-lg leading-relaxed">
-          We believe that companies tackling social and environmental challenges can grow.<br />
-          We explore and support AI-based solutions for key ESG issues,<br />
-          creating both sustainable business growth and market value.
-        </p>
-      </div>
-      <div data-lang="zh">
-        <p class="text-base sm:text-lg leading-relaxed">
-          我们相信应对社会与环境问题的企业也能实现成长。<br />
-          我们探索并支持基于人工智能的ESG关键问题解决方案，<br />
-          实现可持续的商业增长与市场价值。
-        </p>
-      </div>
-    </div>
-    <img src="./assets/images/mission.jpg" alt="Mission Image" class="rounded-xl shadow order-1 md:order-2 w-full h-auto" />
-  </div>
-  <div class="grid md:grid-cols-2 gap-8 items-center">
-    <img src="./assets/images/values.jpg" alt="Values Image" class="rounded-xl shadow w-full h-auto" />
-    <div>
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-blue-700 dark:text-blue-300">Values</h2>
-      <div data-lang="ko">
-        <p class="text-base sm:text-lg leading-relaxed">
-          AI 기술과 창업 생태계에 대한 전문성을 바탕으로<br />
-          삶(Lives), 사회(Society), 지구(Planet)의 구조적 문제를 해결하는 팀을 발굴하고,<br />
-          지속가능한 전환을 가속화합니다.
-        </p>
-      </div>
-      <div data-lang="en">
-        <p class="text-base sm:text-lg leading-relaxed">
-          Based on our expertise in AI technology and the startup ecosystem,<br />
-          we identify teams solving structural issues in Lives, Society, and the Planet,<br />
-          and accelerate sustainable transitions.
-        </p>
-      </div>
-      <div data-lang="zh">
-        <p class="text-base sm:text-lg leading-relaxed">
-          基于我们对人工智能技术与创业生态系统的专业知识，<br />
-          我们发现并支持致力于解决生活、社会与地球结构性问题的团队，<br />
-          加速可持续转型。
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6">
-  <div class="max-w-7xl mx-auto grid gap-12 md:grid-cols-3 text-left">
-    <div>
-      <img src="./assets/images/lives.jpg" class="mb-4 rounded shadow w-full h-auto" alt="Better Lives" />
-      <h3 class="text-xl sm:text-2xl font-bold mb-2 text-blue-700 dark:text-blue-300">Better Lives</h3>
-      <div data-lang="ko">
-        <p class="text-sm sm:text-base leading-relaxed">건강, 교육, 돌봄 등 삶의 핵심 문제를 AI 기술로 해결할 팀을 발굴하고, 시장 진입을 가속화합니다.</p>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+  <img src="./assets/images/values.jpg" alt="Values Image" class="rounded-xl shadow w-full h-auto" />
+  <div>
+    <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-blue-700 dark:text-blue-300">Values</h2>
+    <p class="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-white mb-4 italic">
+  “Better Lives, Better Society, and Better Planet”
+</p>
+          <div data-lang="ko">
+            <p class="text-base sm:text-lg leading-relaxed">
+              AI 기술과 창업 생태계에 대한 전문성을 바탕으로<br />
+              삶(Lives), 사회(Society), 지구(Planet)의 구조적 문제를 해결하는 팀을 발굴하고,<br />
+              지속가능한 전환을 가속화합니다.
+            </p>
+          </div>
+          <div data-lang="en">
+            <p class="text-base sm:text-lg leading-relaxed">
+              Based on our expertise in AI technology and the startup ecosystem,<br />
+              we identify teams solving structural issues in Lives, Society, and the Planet,<br />
+              and accelerate sustainable transitions.
+            </p>
+          </div>
+          <div data-lang="zh">
+            <p class="text-base sm:text-lg leading-relaxed">
+              基于我们对人工智能技术与创业生态系统的专业知识，<br />
+              我们发现并支持致力于解决生活、社会与地球结构性问题的团队，<br />
+              加速可持续转型。
+            </p>
+          </div>
+        </div>
       </div>
-      <div data-lang="en">
-        <p class="text-sm sm:text-base leading-relaxed">We identify teams solving key life issues such as health, education, and care with AI, and accelerate their market entry.</p>
-      </div>
-      <div data-lang="zh">
-        <p class="text-sm sm:text-base leading-relaxed">我们发掘通过人工智能解决健康、教育、照护等关键生活问题的团队，并加快其市场进入。</p>
-      </div>
-      <p class="mt-2 text-xs sm:text-sm text-gray-500 dark:text-gray-400">(UN SDG 3, 4, 10)</p>
-    </div>
-    <div>
-      <img src="./assets/images/society.jpg" class="mb-4 rounded shadow w-full h-auto" alt="Better Society" />
-      <h3 class="text-xl sm:text-2xl font-bold mb-2 text-blue-700 dark:text-blue-300">Better Society</h3>
-      <div data-lang="ko">
-        <p class="text-sm sm:text-base leading-relaxed">복지, 안전, 문화 등 사회 구조 문제에 주목하며 AI 기반 혁신을 실현할 팀을 지원합니다.</p>
-      </div>
-      <div data-lang="en">
-        <p class="text-sm sm:text-base leading-relaxed">We support teams innovating with AI to address structural issues in welfare, safety, and culture.</p>
-      </div>
-      <div data-lang="zh">
-        <p class="text-sm sm:text-base leading-relaxed">我们支持运用人工智能实现社会结构问题创新的团队，如福利、安全、文化等领域。</p>
-      </div>
-      <p class="mt-2 text-xs sm:text-sm text-gray-500 dark:text-gray-400">(UN SDG 9, 10, 11, 16)</p>
-    </div>
-    <div>
-      <img src="./assets/images/planet.jpg" class="mb-4 rounded shadow w-full h-auto" alt="Better Planet" />
-      <h3 class="text-xl sm:text-2xl font-bold mb-2 text-blue-700 dark:text-blue-300">Better Planet</h3>
-      <div data-lang="ko">
-        <p class="text-sm sm:text-base leading-relaxed">기후, 자원, 에너지 문제에 대응하며 해양·우주 생태계로의 확장 가능성을 탐색합니다.</p>
-      </div>
-      <div data-lang="en">
-        <p class="text-sm sm:text-base leading-relaxed">We tackle climate, resource, and energy challenges while exploring expansion into marine and space ecosystems.</p>
-      </div>
-      <div data-lang="zh">
-        <p class="text-sm sm:text-base leading-relaxed">我们应对气候、资源与能源问题，并探索向海洋与太空生态系统的扩展可能性。</p>
-      </div>
-      <p class="mt-2 text-xs sm:text-sm text-gray-500 dark:text-gray-400">(UN SDG 7, 12, 13, 14, 15)</p>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="contact" class="bg-blue-50 dark:bg-gray-800 py-16 px-4 sm:px-6 text-center">
-  <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-blue-700 dark:text-blue-300">Contact Us</h2>
-  <p class="mb-6 text-base sm:text-lg">For inquiries, please use the form below or email us directly.</p>
-  <div class="flex flex-col sm:flex-row justify-center gap-4">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdgFT35sVY6-DZcLOWTx06D7qXY4-giNUxIKpbVmsnLm2OsgQ/viewform?usp=dialog" target="_blank" class="px-6 py-3 bg-blue-700 text-white rounded hover:bg-blue-800 transition">
-      Google Form
-    </a>
-    <a href="mailto:daniel.lee@bmpartners.co.kr" class="px-6 py-3 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 transition">
-      📧 daniel.lee@bmpartners.co.kr
-    </a>
-  </div>
-</section>
+    <section class="bg-gray-50 dark:bg-gray-800 py-16 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto grid gap-12 md:grid-cols-3 text-left">
+        <!-- Better Lives -->
+        <div>
+          <img src="./assets/images/lives.jpg" class="mb-4 rounded shadow w-full h-auto" alt="Better Lives" />
+          <h3 class="text-xl sm:text-2xl font-bold mb-2 text-blue-700 dark:text-blue-300">Better Lives</h3>
+          <div data-lang="ko">
+            <p class="text-sm sm:text-base leading-relaxed">건강, 교육, 돌봄 등 삶의 핵심 문제를 AI 기술로 해결할 팀을 발굴하고, 시장 진입을 가속화합니다.</p>
+          </div>
+          <div data-lang="en">
+            <p class="text-sm sm:text-base leading-relaxed">We identify teams solving key life issues such as health, education, and care with AI, and accelerate their market entry.</p>
+          </div>
+          <div data-lang="zh">
+            <p class="text-sm sm:text-base leading-relaxed">我们发掘通过人工智能解决健康、教育、照护等关键生活问题的团队，并加快其市场进入。</p>
+          </div>
+          <p class="mt-2 text-xs sm:text-sm text-gray-500 dark:text-gray-400">(UN SDG 3, 4, 10)</p>
+        </div>
+
+        <!-- Better Society -->
+        <div>
+          <img src="./assets/images/society.jpg" class="mb-4 rounded shadow w-full h-auto" alt="Better Society" />
+          <h3 class="text-xl sm:text-2xl font-bold mb-2 text-blue-700 dark:text-blue-300">Better Society</h3>
+          <div data-lang="ko">
+            <p class="text-sm sm:text-base leading-relaxed">복지, 안전, 문화 등 사회 구조 문제에 주목하며 AI 기반 혁신을 실현할 팀을 지원합니다.</p>
+          </div>
+          <div data-lang="en">
+            <p class="text-sm sm:text-base leading-relaxed">We support teams innovating with AI to address structural issues in welfare, safety, and culture.</p>
+          </div>
+          <div data-lang="zh">
+            <p class="text-sm sm:text-base leading-relaxed">我们支持运用人工智能实现社会结构问题创新的团队，如福利、安全、文化等领域。</p>
+          </div>
+          <p class="mt-2 text-xs sm:text-sm text-gray-500 dark:text-gray-400">(UN SDG 9, 10, 11, 16)</p>
+        </div>
+
+        <!-- Better Planet -->
+        <div>
+          <img src="./assets/images/planet.jpg" class="mb-4 rounded shadow w-full h-auto" alt="Better Planet" />
+          <h3 class="text-xl sm:text-2xl font-bold mb-2 text-blue-700 dark:text-blue-300">Better Planet</h3>
+          <div data-lang="ko">
+            <p class="text-sm sm:text-base leading-relaxed">기후, 자원, 에너지 문제에 대응하며 해양·우주 생태계로의 확장 가능성을 탐색합니다.</p>
+          </div>
+          <div data-lang="en">
+            <p class="text-sm sm:text-base leading-relaxed">We tackle climate, resource, and energy challenges while exploring expansion into marine and space ecosystems.</p>
+          </div>
+          <div data-lang="zh">
+            <p class="text-sm sm:text-base leading-relaxed">我们应对气候、资源与能源问题，并探索向海洋与太空生态系统的扩展可能性。</p>
+          </div>
+          <p class="mt-2 text-xs sm:text-sm text-gray-500 dark:text-gray-400">(UN SDG 7, 12, 13, 14, 15)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-blue-50 dark:bg-gray-800 py-16 px-4 sm:px-6 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-blue-700 dark:text-blue-300">Contact Us</h2>
+      <p class="mb-6 text-base sm:text-lg">For inquiries, please use the form below or email us directly.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdgFT35sVY6-DZcLOWTx06D7qXY4-giNUxIKpbVmsnLm2OsgQ/viewform?usp=dialog" target="_blank" class="px-6 py-3 bg-blue-700 text-white rounded hover:bg-blue-800 transition">
+          Google Form
+        </a>
+        <a href="mailto:daniel.lee@bmpartners.co.kr" class="px-6 py-3 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 transition">
+          📧 daniel.lee@bmpartners.co.kr
+        </a>
+      </div>
+    </section>
   </body>
 </html>
