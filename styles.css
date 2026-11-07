@@ -105,6 +105,7 @@ footer{display:flex;align-items:center;justify-content:space-between;gap:12px;pa
 .crane .stage-mark { width: 20px; height: 1px; border-radius: 0; }
 .crane .stage { font-size: 14px; }
 .crane footer { flex-wrap: wrap; }
+.crane footer address { margin-top: 4px; font-style: normal; word-break: keep-all; }
 .crane footer span:nth-child(2) { color: #655f56; }
 .crane footer a { margin-left: auto; }
 .crane-stage header, .crane-stage .crane-cover {
